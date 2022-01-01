@@ -1,0 +1,23 @@
+.header {
+  display: flex;
+  background: rgb(0, 60, 255);
+  height: 50px;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  margin: 0px;
+  padding: 0 20px;
+}
+
+.logo {
+  cursor: pointer;
+}
+.menu ul {
+  display: flex;
+  list-style: none;
+  cursor: pointer;
+}
+
+.menu ul li{
+  margin: 0 20px;
+}
