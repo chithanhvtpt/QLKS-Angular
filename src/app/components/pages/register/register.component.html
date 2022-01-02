@@ -1,41 +1,64 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" >
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" >
-  <title>Register Form Validator</title>
 
-</head>
-<body>
-<div class="container">
-  <h1>Register</h1>
-  <form>
-    <div class="form-control">
-      <input type="text" id="username" placeholder="Username" >
-      <span></span>
-      <small></small>
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
+
+<!--<link rel="stylesheet" href="../../../../assets/fonts/icomoon/style.css">-->
+
+<!--<link rel="stylesheet" href="../../../../assets/css/owl.carousel.min.css">-->
+
+<!--&lt;!&ndash;&lt;!&ndash; Bootstrap CSS &ndash;&gt;&ndash;&gt;-->
+<!--<link rel="stylesheet" href="../../../../assets/css/bootstrap.min.css">-->
+<!--<link rel="stylesheet" href="../../../../assets/css/style.css">-->
+<div class="d-lg-flex half">
+  <div class="bg order-1 order-md-2" style="background-image: url('assets/images/bg_1.jpg');"></div>
+  <div class="contents order-2 order-md-1">
+
+    <div class="container">
+      <div class="row align-items-center justify-content-center">
+        <div class="col-md-7">
+          <div class="mb-4">
+            <h3>Đăng Ký</h3>
+          </div>
+          <form [formGroup]="registerForm" (ngSubmit)="register()">
+            <div class="form-group last mb-3">
+              <label for="name">Họ và tên</label>
+              <input type="text" class="form-control" formControlName="name" id="name">
+            </div>
+            <div class="form-group last mb-3">
+              <label for="phone">Số điện thoại</label>
+              <input type="number" class="form-control" formControlName="phone" id="phone">
+            </div>
+            <div class="form-group last mb-3">
+              <label for="email">Email</label>
+              <input type="email" class="form-control" formControlName="email" id="email">
+            </div>
+            <div class="form-group last mb-3">
+              <label for="address">Địa chỉ</label>
+              <input type="text" class="form-control" formControlName="address" id="address">
+            </div>
+            <div class="form-group last mb-3">
+              <label for="password">Mật khẩu</label>
+              <input type="password" class="form-control" formControlName="password" id="password">
+            </div>
+            <div class="form-group last mb-3">
+              <label for="password">Nhập lại mật khẩu</label>
+              <input type="password" class="form-control" formControlName="repassword" id="repassword">
+            </div>
+            <div class="d-flex mb-5 align-items-center">
+              <label class="control control--checkbox mb-0"><span class="caption">Nhớ mật khẩu</span>
+                <input type="checkbox" checked="checked">
+                <div class="control__indicator"></div>
+              </label>
+              <span class="ml-auto"><a routerLink="../login" class="forgot-pass">Đã có tài khoản</a></span>
+            </div>
+            <input type="submit" value="Đăng ký" class="btn btn-block btn-primary">
+          </form>
+        </div>
+      </div>
     </div>
-    <div class="form-control">
-      <input type="email" id="email" placeholder="Email" >
-      <span></span>
-      <small></small>
-    </div>
-    <div class="form-control">
-      <input type="password" id="password" placeholder="Password" >
-      <span></span>
-      <small></small>
-    </div>
-    <div class="form-control">
-      <input type="password" id="password2" placeholder="Confirm password">
-      <span></span>
-      <small></small>
-    </div>
-    <input type="submit" value="Login">
-    <div class="signup_link">Not a member? <a href="#">Signup</a></div>
-  </form>
+  </div>
 </div>
+<!--<script src="../../../../assets/js/jquery-3.3.1.min.js"></script>-->
+<!--<script src="../../../../assets/js/popper.min.js"></script>-->
+<!--<script src="../../../../assets/js/bootstrap.min.js"></script>-->
+<!--<script src="../../../../assets/js/main.js"></script>-->
 
-<script src="app.js"></script>
-</body>
-</html>
