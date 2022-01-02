@@ -9,7 +9,7 @@
 <!--<link rel="stylesheet" href="../../../../assets/css/bootstrap.min.css">-->
 <!--<link rel="stylesheet" href="../../../../assets/css/style.css">-->
 <div class="d-lg-flex half">
-  <div class="bg order-1 order-md-2" style="background-image: url('assets/images/bg_1.jpg');"></div>
+  <div class="bg order-1 order-md-2" style="background-image: url('assets/auth-template/images/bg_1.jpg');"></div>
   <div class="contents order-2 order-md-1">
 
     <div class="container">
@@ -20,28 +20,28 @@
           </div>
           <form [formGroup]="registerForm" (ngSubmit)="register()">
             <div class="form-group last mb-3">
-              <label for="name">Họ và tên</label>
-              <input type="text" class="form-control" formControlName="name" id="name">
+              <label>Họ và tên</label>
+              <input type="text" class="form-control" formControlName="name" >
             </div>
             <div class="form-group last mb-3">
-              <label for="phone">Số điện thoại</label>
-              <input type="number" class="form-control" formControlName="phone" id="phone">
+              <label>Số điện thoại</label>
+              <input type="number" class="form-control" formControlName="phone" >
             </div>
             <div class="form-group last mb-3">
-              <label for="email">Email</label>
-              <input type="email" class="form-control" formControlName="email" id="email">
+              <label>Email</label>
+              <input type="email" class="form-control" formControlName="email">
             </div>
             <div class="form-group last mb-3">
-              <label for="address">Địa chỉ</label>
-              <input type="text" class="form-control" formControlName="address" id="address">
+              <label>Địa chỉ</label>
+              <input type="text" class="form-control" formControlName="address">
             </div>
             <div class="form-group last mb-3">
-              <label for="password">Mật khẩu</label>
-              <input type="password" class="form-control" formControlName="password" id="password">
+              <label>Mật khẩu</label>
+              <input type="password" class="form-control" formControlName="password">
             </div>
             <div class="form-group last mb-3">
-              <label for="password">Nhập lại mật khẩu</label>
-              <input type="password" class="form-control" formControlName="repassword" id="repassword">
+              <label>Nhập lại mật khẩu</label>
+              <input type="password" class="form-control" formControlName="repassword">
             </div>
             <div class="d-flex mb-5 align-items-center">
               <label class="control control--checkbox mb-0"><span class="caption">Nhớ mật khẩu</span>
