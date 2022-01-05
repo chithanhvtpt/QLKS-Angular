@@ -13,6 +13,10 @@ import { FooterComponent } from './components/layouts/footer/footer.component';
 import {HttpClientModule} from "@angular/common/http";
 import {ReactiveFormsModule} from "@angular/forms";
 import { HouseListComponent } from './components/houses/house-list/house-list.component';
+import { UserComponent } from './components/user/user.component';
+import { UserListComponent } from './users/user-list/user-list.component';
+import { UserUpdateComponent } from './users/user-update/user-update.component';
+import { UserDetailComponent } from './components/users/user-detail/user-detail.component';
 
 
 @NgModule({
@@ -23,7 +27,11 @@ import { HouseListComponent } from './components/houses/house-list/house-list.co
     RegisterComponent,
     HeaderComponent,
     FooterComponent,
-    HouseListComponent
+    HouseListComponent,
+    UserComponent,
+    UserListComponent,
+    UserUpdateComponent,
+    UserDetailComponent
   ],
   imports: [
     BrowserModule,
