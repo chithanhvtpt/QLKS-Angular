@@ -12,6 +12,7 @@ import { FooterComponent } from './components/layouts/footer/footer.component';
 
 import {HttpClientModule} from "@angular/common/http";
 import {ReactiveFormsModule} from "@angular/forms";
+import { HouseListComponent } from './components/houses/house-list/house-list.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import {ReactiveFormsModule} from "@angular/forms";
     LoginComponent,
     RegisterComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    HouseListComponent
   ],
   imports: [
     BrowserModule,
