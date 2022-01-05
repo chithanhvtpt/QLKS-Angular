@@ -21,7 +21,7 @@ export class LoginComponent implements OnInit {
   }
   login() {
     let data = this.loginForm.value
-    this.loginService.login(data).subscribe(res => {
+    this.loginService.login(data).subscribe(() => {
       this.router.navigate([""])
     })
   }
