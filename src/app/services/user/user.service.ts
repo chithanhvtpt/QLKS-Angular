@@ -18,10 +18,11 @@ export class UserService {
     )
   }
 
-  update(id: number ,user: User): Observable<any> {
+  update(id: number, user: User): Observable<any> {
     return this.http.put(
       environment.api_url + "/users" + id, user
     )
   }
+
 }
 

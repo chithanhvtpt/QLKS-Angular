@@ -4,29 +4,34 @@ import { Observable } from 'rxjs';
 import { House } from 'src/app/model/house';
 import { environment } from 'src/environments/environment';
 
-const API_URL = `${environment.api_url}`
 @Injectable({
   providedIn: 'root'
 })
 export class HouseService {
-  findById(id: any) {
-    throw new Error('Method not implemented.');
-  }
+
 
   constructor(private http: HttpClient) { }
 
-  getAll(): Observable<House[]> {
-    return this.http.get<House[]>(API_URL + '/houses')
+  getAll(): Observable<any> {
+    return this.http.get<any>(
+      environment.api_url + '/houses')
   }
 
   createHouse(house: House): Observable<House> {
-    return this.http.post<House>(API_URL + '/houses', house);
+    return this.http.post<House>(
+      environment.api_url + '/houses', house);
   }
   destroy(id: number): Observable<House> {
-    return this.http.delete<House>(`${API_URL}/houses/${id}`);
+    return this.http.delete<House>(
+      `${environment.api_url}/houses/${id}`);
   }
 
-  updateHouse(id: any, house: any): Observable<any> {
-    return this.http.put(`${API_URL}/houses/${id}`, house);
+  updateHouse(id: any, house: House): Observable<any> {
+    return this.http.put(`${environment.api_url}/houses/${id}`, house);
+  }
+  getById(id: any): Observable<any> {
+    return this.http.get(
+      environment.api_url + "/houses" + `/${id}`
+    )
   }
 }

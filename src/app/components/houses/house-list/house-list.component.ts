@@ -8,7 +8,7 @@ import { HouseService } from 'src/app/services/house/house.service';
   styleUrls: ['./house-list.component.css']
 })
 export class HouseListComponent implements OnInit {
-houses: House[]=[];
+  houses: House[] = [];
   constructor(private houseService: HouseService) { }
 
   ngOnInit(): void {

@@ -23,6 +23,7 @@ export class HouseCreateComponent implements OnInit {
     category_id: new FormControl(),
     district_id: new FormControl(),
     image_id: new FormControl(),
+    user_id: new FormControl()
   })
   constructor(private houseService: HouseService, private router:Router) { }
 

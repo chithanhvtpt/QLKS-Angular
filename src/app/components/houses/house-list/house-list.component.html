@@ -22,6 +22,7 @@
             <td>{{ house.bedroom }}</td>
             <td>{{ house.bathroom }}</td>
             <td><button (click)="destroy(i)">Xóa bỏ</button></td>
+            <td><button routerLink="../../house/update/{{house.id}}">update</button></td>
         </tr>
     </tbody>
 </table>

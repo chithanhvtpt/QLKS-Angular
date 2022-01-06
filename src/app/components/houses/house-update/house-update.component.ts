@@ -1,6 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { FormControl, FormGroup } from '@angular/forms';
-import { ActivatedRoute, ParamMap } from '@angular/router';
+import {FormBuilder, FormControl, FormGroup} from '@angular/forms';
+import {ActivatedRoute, ParamMap, Router} from '@angular/router';
 import { House } from 'src/app/model/house';
 import { HouseService } from 'src/app/services/house/house.service';
 
@@ -12,33 +12,44 @@ import { HouseService } from 'src/app/services/house/house.service';
 
 export class HouseUpdateComponent implements OnInit {
 
-  houseForm: any = FormGroup;
-  id: 0 | undefined;
+  houseForm: FormGroup | any;
+  id: any;
 
-  // constructor(private houseService: HouseService, private activatedRoute: ActivatedRoute) {
-  //   this.activatedRoute.paramMap.subscribe((paramMap: ParamMap) => {
-  //     this.id = +paramMap.get('id');
-  //     this.getHouse(this.id);
-  //   });
-  // }
+  constructor(private houseService: HouseService, private activatedRoute: ActivatedRoute, private router: Router, private fb: FormBuilder) {
+    this.activatedRoute.paramMap.subscribe((paramMap: ParamMap) => {
+      this.id = paramMap.get("id");
+      this.getHouse(this.id);
+    });
+  }
 
   ngOnInit(): void {
   }
 
-  // getHouse(id: number) {
-  //   return this.houseService.findById(id).subscribe(house => {
-  //     this.houseForm = new FormGroup({
-  //       name: new FormControl(house.name),
-  //     });
-  //   });
-  // }
+  getHouse(id: any) {
+    this.houseService.getById(id).subscribe(res => {
+      console.log(res)
+      this.houseForm = this.fb.group({
+        name: [res[0].name],
+        image: [res[0].image],
+        address: [res[0].address],
+        price: [res[0].price],
+        description: [res[0].description],
+        status: [res[0].status],
+        bedroom: [res[0].bedroom],
+        bathroom: [res[0].bathroom],
+        category_id: [res[0].category_id],
+        district_id: [res[0].district_id],
+        image_id: [res[0].image_id],
+        user_id: [res[0].user_id]
+      })
+    })
 
-  // updateHouse(id: number) {
-  //   const house = this.houseForm.value;
-  //   this.houseService.updateHouse(id, house).subscribe(() => {
-  //     alert('Cập nhật thành công');
-  //   }, e => {
-  //     console.log(e);
-  //   });
-  // }
+  }
+
+  updateHouse(id: number) {
+    const house = this.houseForm.value;
+    this.houseService.updateHouse(id, house).subscribe(() => {
+      this.router.navigate(["house/list"])
+    });
+  }
 }

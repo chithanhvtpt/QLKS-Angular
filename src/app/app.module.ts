@@ -12,13 +12,14 @@ import { FooterComponent } from './components/layouts/footer/footer.component';
 
 import {HttpClientModule} from "@angular/common/http";
 import {ReactiveFormsModule} from "@angular/forms";
+
+import { HouseListComponent } from './components/houses/house-list/house-list.component';
+import { UserDetailComponent } from './components/users/user-detail/user-detail.component';
+import {UserUpdateComponent} from "./components/users/user-update/user-update.component";
 // import { UserComponent } from './components/user/user.component';
 // import { UserListComponent } from './users/user-list/user-list.component';
 // import { UserUpdateComponent } from './users/user-update/user-update.component';
-import { UserDetailComponent } from './components/users/user-detail/user-detail.component';
-import {UserUpdateComponent} from "./components/users/user-update/user-update.component";
 import { HouseUpdateComponent } from './components/houses/house-update/house-update.component';
-
 
 
 @NgModule({

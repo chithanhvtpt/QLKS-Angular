@@ -6,10 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./master.component.css']
 })
 export class MasterComponent implements OnInit {
-
+  user: any
   constructor() { }
 
   ngOnInit(): void {
   }
+
 
 }

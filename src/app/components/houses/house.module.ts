@@ -2,10 +2,10 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { HouseRoutingModule } from './house-routing.module';
-import { HouseListComponent } from '../house-list/house-list.component';
-import { HouseCreateComponent } from '../house-create/house-create.component';
-import { ReactiveFormsModule } from "@angular/forms";
-import { HouseUpdateComponent } from '../house-update/house-update.component';
+import { HouseListComponent } from './house-list/house-list.component';
+import { HouseCreateComponent } from './house-create/house-create.component';
+import {FormBuilder, FormsModule, ReactiveFormsModule} from "@angular/forms";
+import { HouseUpdateComponent } from './house-update/house-update.component';
 
 
 @NgModule({
@@ -17,7 +17,7 @@ import { HouseUpdateComponent } from '../house-update/house-update.component';
   imports: [
     CommonModule,
     HouseRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
   ]
 })
 export class HouseModule { }
