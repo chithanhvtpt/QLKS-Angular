@@ -20,6 +20,7 @@ import {UserUpdateComponent} from "./components/users/user-update/user-update.co
 // import { UserListComponent } from './users/user-list/user-list.component';
 // import { UserUpdateComponent } from './users/user-update/user-update.component';
 import { HouseUpdateComponent } from './components/houses/house-update/house-update.component';
+import { HomeComponent } from './components/layouts/home/home.component';
 
 
 @NgModule({
@@ -32,6 +33,7 @@ import { HouseUpdateComponent } from './components/houses/house-update/house-upd
     FooterComponent,
     UserUpdateComponent,
     UserDetailComponent,
+    HomeComponent,
   ],
   imports: [
     BrowserModule,

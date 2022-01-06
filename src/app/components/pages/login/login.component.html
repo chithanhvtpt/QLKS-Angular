@@ -4,7 +4,7 @@
 
 <!--<link rel="stylesheet" href="../../../../assets/css/owl.carousel.min.css">-->
 
-&lt;!&ndash;&lt;!&ndash; Bootstrap CSS &ndash;&gt;&ndash;&gt;
+
 <!--<link rel="stylesheet" href="../../../../assets/css/bootstrap.min.css">-->
 <!--<link rel="stylesheet" href="../../../../assets/css/style.css">-->
  <div class="d-lg-flex half">
@@ -16,7 +16,10 @@
           <div class="mb-4">
             <h3>Đăng Nhập</h3>
           </div>
-          <form [formGroup]="loginForm" (ngSubmit)="login()">
+          <div *ngIf="errorLogin">
+            {{errorLogin}}
+          </div>
+          <form *ngIf="loginForm" [formGroup]="loginForm" (ngSubmit)="login()">
             <div class="form-group last mb-3">
               <label >Email</label>
               <input type="email" formControlName="email" class="form-control" >
