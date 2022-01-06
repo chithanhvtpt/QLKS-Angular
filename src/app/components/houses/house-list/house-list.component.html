@@ -20,17 +20,18 @@
         <div class="district">
             <h2>Tất cả các nhà cho thuê</h2>
             <div class="line-big"></div>
-            <div class="address-top-area">
+            <div class="address-top-area" *ngFor="let house of houses; index as i">
                 <div class="address-area-0ahl">
-                    <img src="" alt="">
+                    <img src="{{house.image}}">
                 </div>
                 <div class="content-under-image">
-                    <p>Căn hộ dịch vụ - 1 phòng ngủ</p>
-                    <p>2000 Chỗ ở</p>
-                    <p>690,000₫/đêm</p>
+                    <p>{{house.name}}</p>
+                    <p>{{house.address}}</p>
+                    <p>{{house.price}}</p>
                 </div>
             </div>
         </div>
 
     </div>
     <!-- ---CONTENT -->
+</div>
