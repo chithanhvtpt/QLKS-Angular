@@ -29,18 +29,18 @@ export class HouseUpdateComponent implements OnInit {
     this.houseService.getById(id).subscribe(res => {
       console.log(res)
       this.houseForm = this.fb.group({
-        name: res.name,
-        image: res.image,
-        address: res.address,
-        price: res.price,
-        description: res.description,
-        status: res.status,
-        bedroom: res.bedroom,
-        bathroom: res.bathroom,
-        category_id: res.category_id,
-        district_id: res.district_id,
-        image_id: res.image_id,
-        user_id: res.user_id
+        name: [res[0].name],
+        image: [res[0].image],
+        address: [res[0].address],
+        price: [res[0].price],
+        description: [res[0].description],
+        status: [res[0].status],
+        bedroom: [res[0].bedroom],
+        bathroom: [res[0].bathroom],
+        category_id: [res[0].category_id],
+        district_id: [res[0].district_id],
+        image_id: [res[0].image_id],
+        user_id: [res[0].user_id]
       })
     })
 

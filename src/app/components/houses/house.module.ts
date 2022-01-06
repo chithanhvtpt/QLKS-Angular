@@ -18,7 +18,6 @@ import { HouseUpdateComponent } from './house-update/house-update.component';
     CommonModule,
     HouseRoutingModule,
     ReactiveFormsModule,
-    FormsModule,
   ]
 })
 export class HouseModule { }

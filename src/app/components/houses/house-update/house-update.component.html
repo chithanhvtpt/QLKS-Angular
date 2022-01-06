@@ -1,4 +1,4 @@
-<form [formGroup]="houseForm" (ngSubmit)="updateHouse(id)">
+<form *ngIf="houseForm" [formGroup]="houseForm" (ngSubmit)="updateHouse(id)">
   <table>
     <tr>
       <td><input type="text" formControlName="name" placeholder="name"></td>

@@ -22,7 +22,7 @@ export class LoginComponent implements OnInit {
   login() {
     let data = this.loginForm.value
     this.loginService.login(data).subscribe(res => {
-      localStorage.setItem("", JSON.stringify(res))
+      localStorage.setItem("", JSON.stringify(res.access_token))
       this.router.navigate([""])
     })
   }

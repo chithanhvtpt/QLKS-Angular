@@ -12,8 +12,8 @@ export class HouseService {
 
   constructor(private http: HttpClient) { }
 
-  getAll(): Observable<House[]> {
-    return this.http.get<House[]>(
+  getAll(): Observable<any> {
+    return this.http.get<any>(
       environment.api_url + '/houses')
   }
 
