@@ -108,25 +108,11 @@ body {
 }
 
 .address-top-area .address-area-0ahl {
-    background-image: url(https://cdn.luxstay.com/home/location/location_1_1559734709.png);
+    /*background-image: url(https://cdn.luxstay.com/home/location/location_1_1559734709.png);*/
 
 }
 
-.address-top-area .address-area-02 {
-    background-image: url(https://cdn.luxstay.com/home/location/location_5_1559735011.png);
-}
 
-.address-top-area .address-area-03 {
-    background-image: url(https://cdn.luxstay.com/home/location/location_10_1559303118.png);
-}
-
-.address-top-area .address-area-04 {
-    background-image: url(https://cdn.luxstay.com/home/location/location_4_1559786177.png);
-}
-
-.address-top-area .address-area-05 {
-    background-image: url(https://cdn.luxstay.com/home/location/location_16_1559303173.png);
-}
 
 .address-top-area .content-under-image {
     position: absolute;
