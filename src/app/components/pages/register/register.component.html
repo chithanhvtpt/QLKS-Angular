@@ -1,59 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
 
-<!--  <link rel="stylesheet" href="assets/auth-template/css/style.css">-->
-<!--  <link rel="stylesheet" href="assets/auth-template/css/owl.carousel.min.css">-->
-<!--  <link rel="stylesheet" href="assets/auth-template/fonts/icomoon/style.css">-->
-<!--  <link rel="stylesheet" href="../../../../assets/auth-template/css/bootstrap.min.css">-->
-<div class="d-lg-flex half">
-  <div class="bg order-1 order-md-2" style="background-image: url('assets/auth-template/images/bg_1.jpg');"></div>
-  <div class="contents order-2 order-md-1">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HoangVQ-LoginRegister-01</title>
+    <!-- <link rel="stylesheet" href="./assets/css/stylle.css"> -->
+    <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
+</head>
 
-    <div class="container">
-      <div class="row align-items-center justify-content-center">
-        <div class="col-md-7">
-          <div class="mb-4">
-            <h3>Đăng Ký</h3>
-          </div>
-          <form [formGroup]="registerForm" (ngSubmit)="register()">
-            <div class="form-group last mb-3">
-              <label>Họ và tên</label>
-              <input type="text" class="form-control" formControlName="name" >
-            </div>
-            <div class="form-group last mb-3">
-              <label>Số điện thoại</label>
-              <input type="number" class="form-control" formControlName="phone" >
-            </div>
-            <div class="form-group last mb-3">
-              <label>Email</label>
-              <input type="email" class="form-control" formControlName="email">
-            </div>
-            <div class="form-group last mb-3">
-              <label>Địa chỉ</label>
-              <input type="text" class="form-control" formControlName="address">
-            </div>
-            <div class="form-group last mb-3">
-              <label>Mật khẩu</label>
-              <input type="password" class="form-control" formControlName="password">
-            </div>
-            <div class="form-group last mb-3">
-              <label>Nhập lại mật khẩu</label>
-              <input type="password" class="form-control" formControlName="repassword">
-            </div>
-            <div class="d-flex mb-5 align-items-center">
-              <label class="control control--checkbox mb-0"><span class="caption">Nhớ mật khẩu</span>
-                <input type="checkbox" checked="checked">
-                <div class="control__indicator"></div>
-              </label>
-              <span class="ml-auto"><a routerLink="../login" class="forgot-pass">Đã có tài khoản</a></span>
-            </div>
-            <input [disabled]="!registerForm.valid" type="submit" value="Đăng ký" class="btn btn-block btn-secondary">
-          </form>
+<body>
+    <div id="login-register">
+        <div id="form-left">
+            <form action="" class="form-login">
+                <div class="in-form-login">
+                    <div class="title">
+                        
+                    </div>
+                    <div class="line-space-big"></div>
+                    <div class="form-input">
+                      
+                        <div class="line-space-big"></div>
+                        <div class="remember">
+                        </div>
+                        <div class="login-button">
+                            <p><button class="login">Đăng nhập</button></p>
+                        </div>
+                    </div>
+                </div>
+            </form>
         </div>
-      </div>
-    </div>
-  </div>
-</div>
-<!--<script src="assets/auth-template/js/bootstrap.min.js"></script>-->
-<!--<script src="assets/auth-template/js/jquery-3.3.1.min.js"></script>-->
-<!--<script src="assets/auth-template/js/main.js"></script>-->
-<!--<script src="assets/auth-template/js/popper.min.js"></script>-->
 
+        <div id="form-right">
+            <div id="form-right-hidden">
+                <form action="" class="form-register">
+                    <div class="in-form-register">
+                        <div class="title">
+                            <h2>Đăng ký tài khoản mới tại đây</h2>
+                            <p>Definitely, We can Serve you better – Chắc chắn, chúng tôi có thể phục vụ bạn tốt hơn</p>
+                        </div>
+                        <div class="form-input">
+                            <input class="first" type="text" formControlName="name" placeholder="Tên của bạn">
+                            <input class="midle" type="text" formControlName="email" placeholder="Tài khoản Gmail của bạn">
+                            <input class="midle" type="text"  formControlName="phone"  placeholder="Số điện thoại của bạn">
+                            <input class="second" type="text" formControlName="address"  placeholder="Địa chỉ cá nhân">
+                            <div class="line-space-big"></div>
+                            <input class="first" type="text" formControlName="password"  placeholder="Mật khẩu">
+                            <input class="second" type="text" formControlName="repassword"  placeholder="Nhập lại mật khẩu">
+                            <!-- <p><strong>Thêm ảnh đại diện</strong><input type="file" id="file" (change)="handleFileInput($event.target.files)"></p> -->
+                            <div class="register-button">
+                                <p><button class="create-account">Tạo tài khoản</button></p>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
