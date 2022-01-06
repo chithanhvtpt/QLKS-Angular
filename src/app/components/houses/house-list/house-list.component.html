@@ -18,11 +18,11 @@
     <div class="line-big-2"></div>
     <div class="show-homestay">
         <div class="district">
-            <h2>Tất cả các nhà cho thuê</h2>
+            <h2>Homestay tại Hà Nội</h2>
             <div class="line-big"></div>
             <div class="address-top-area" *ngFor="let house of houses; index as i">
                 <div class="address-area-0ahl">
-                    <img src="{{house.image}}">
+                    <img width="100%" height="100%" src="{{house.image ?? 'https://vietphiladelphia.com/wp-content/themes/simple-glassy/images/default-image.png'}} ">
                 </div>
                 <div class="content-under-image">
                     <p>{{house.name}}</p>
