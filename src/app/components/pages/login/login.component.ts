@@ -9,21 +9,29 @@ import {LoginService} from "../../../services/auth/login.service";
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
+  errorLogin: any
   loginForm: FormGroup | any
 
   constructor(private fb: FormBuilder, private router: Router, private loginService: LoginService) { }
 
   ngOnInit(): void {
     this.loginForm = this.fb.group({
-      email: ["", Validators.required, Validators.email],
-      password: ["", Validators.required]
+      email: [""],
+      password: [""]
     })
   }
   login() {
     let data = this.loginForm.value
     this.loginService.login(data).subscribe(res => {
-      localStorage.setItem("", JSON.stringify(res.access_token))
-      this.router.navigate([""])
+      if (res.error) {
+        this.errorLogin = res.message
+      }else {
+        console.log(res)
+        // let token = res.access_token
+        // localStorage.setItem("token", token)
+        this.router.navigate([""])
+      }
+
     })
   }
 
