@@ -1,0 +1,20 @@
+<form [formGroup]="createForm" (ngSubmit)="create()">
+    <table>
+        <tr>
+            <td><input type="text" formControlName="name" placeholder="name"></td>
+            <td><input type="text" formControlName="image" placeholder="image"></td>
+            <td><input type="text" formControlName="address" placeholder="address"></td>
+            <td><input type="number" formControlName="price" placeholder="price"></td>
+            <td><input type="text" formControlName="description" placeholder="description"></td>
+            <td><input type="text" formControlName="status" placeholder="status"></td>
+            <td><input type="number" formControlName="bedroom" placeholder="bedroom"></td>
+            <td><input type="number" formControlName="bathroom" placeholder="bathroom"></td>
+            <td><input type="number" formControlName="category_id" placeholder="category_id"></td>
+            <td><input type="number" formControlName="district_id" placeholder="district_id"></td>
+            <td><input type="number" formControlName="image_id" placeholder="image_id"></td>
+            <td><input type="number" formControlName="user_id" placeholder="user_id"></td>
+        </tr>
+      <button>Gửi</button>
+
+    </table>
+</form>

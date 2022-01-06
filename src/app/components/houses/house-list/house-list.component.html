@@ -1,1 +1,28 @@
-<p>house-list works!</p>
+<table>
+    <thead>
+        <tr>
+            <td>Mã số nhà</td>
+            <td>Căn hộ</td>
+            <td>Hình Ảnh</td>
+            <td>Địa chỉ</td>
+            <td>Giá thuê căn hộ</td>
+            <td>Trạng thái</td>
+            <td>Số phòng ngủ</td>
+            <td>Số phòng tắm</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let house of houses, index as i">
+            <td>{{ house.id }}</td>
+            <td>{{ house.name }}</td>
+            <td>{{ house.image }}</td>
+            <td>{{ house.address }}</td>
+            <td>{{ house.price }}</td>
+            <td>{{ house.status }}</td>
+            <td>{{ house.bedroom }}</td>
+            <td>{{ house.bathroom }}</td>
+            <td><button (click)="destroy(i)">Xóa bỏ</button></td>
+            <td><button routerLink="../../house/update/{{house.id}}">update</button></td>
+        </tr>
+    </tbody>
+</table>

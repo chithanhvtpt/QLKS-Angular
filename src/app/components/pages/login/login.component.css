@@ -1,3 +1,131 @@
-.social-login a.twitter {
-  background: #000000;
+/* Reset Css */
+
+#login-register {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Slab", sans-serif;
+  background-color: white;
+}
+
+/* ------- */
+
+.form-login>.in-form-login>.form-input>input {
+  width: 120%;
+  height: 40px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  border-color: gray;
+}
+
+.form-register>.in-form-register>.form-input>p>input {
+  width: 120%;
+  height: 40px;
+  border-radius: 5px;
+  border-color: gray;
+}
+
+.login-button{
+  text-align: center;
+  position: relative;
+  top:50px;
+  left:14%;
+}
+
+button{
+  width: 80%;
+  height: 40px;
+}
+
+.login{
+  background-color:#0069D9;
+  border-radius: 0.25rem;
+  color: white;
+  border-color: #0069D9;
+}
+
+.login-google{
+  background-color: #EA4335;
+  border-radius: 0.25rem;
+  color: white;
+  border-color: #EA4335;
+}
+
+.line-space{
+  height:2px;
+  background-color:white;
+}
+
+.create-account{
+  background-color:#0069D9;
+  border-radius: 0.25rem;
+  color: white;
+  border-color: #0069D9;
+}
+
+/* -------- */
+
+#login-register #form-left {
+  width: 50%;
+  height: 925px;
+  background-color: white;
+  float: left;
+  position: relative;
+}
+
+#login-register #form-right {
+  background-image: url(https://cdn1.photostockeditor.com/c/1312/woman-standing-on-middle-of-road-people-human.jpg);
+  width: 50%;
+  height: 925px;
+  background-size: cover;
+  background-position: center;
+  float: right;
+  position: relative;
+}
+
+.in-form-login {
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  position: absolute;
+  width: 60%;
+  height: 70%;
+  top: 15%;
+  left: 20%;
+}
+
+.in-form-register {
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  position: absolute;
+  width: 60%;
+  height: 75%;
+  top: 15%;
+  left: 20%;
+}
+
+.form-input {
+  position: absolute;
+  top: 25%;
+  left: 10%;
+  width: 60%;
+}
+
+.in-form-register>.form-input{
+  position: absolute;
+  top: 23%;
+  left: 10%;
+  width: 60%;
+  /* height: 800px;
+  background-color: red; */
+}
+
+
+.title h2 {
+  text-transform: uppercase;
+}
+
+.title {
+  /* text-align: center; */
+  position: absolute;
+  padding: 20px 56px 0;
 }
