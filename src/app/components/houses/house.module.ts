@@ -6,6 +6,7 @@ import { HouseListComponent } from './house-list/house-list.component';
 import { HouseCreateComponent } from './house-create/house-create.component';
 import {FormBuilder, FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { HouseUpdateComponent } from './house-update/house-update.component';
+import { HouseUserComponent } from './house-user/house-user.component';
 
 
 @NgModule({
@@ -13,6 +14,7 @@ import { HouseUpdateComponent } from './house-update/house-update.component';
     HouseListComponent,
     HouseCreateComponent,
     HouseUpdateComponent,
+    HouseUserComponent,
   ],
   imports: [
     CommonModule,

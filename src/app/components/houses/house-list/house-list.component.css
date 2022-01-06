@@ -1,200 +1,152 @@
 /* Reset Css */
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+
+html {
     font-family: 'Roboto Slab', sans-serif;
 }
 
+body {
+    background-color: white;
+}
+
 /* OTHER */
-.line-beauty {
-    height: 10px;
-    width: 100%;
-    background-color: rgba(128, 128, 128, 0);
-    border-bottom: 1px solid gray;
+.line-big {
+    height: 15px;
+}
+
+.line-big-2 {
+    height: 25px;
+}
+
+#content>.content-login>h2,
+#content>.content-address-top>h2,
+#content>.content-voucher>h2,
+#content>.content-blog>h2 {
+    font-size: 30px;
+}
+
+#content>.content-login>p,
+#content>.content-address-top>p,
+#content>.content-voucher>p,
+#content>.content-blog>p {
+    font-size: 17px;
+    line-height: 30px;
 }
 
 /* ---OTHER */
 
-/* HEADING */
-#admin-theme .admin-theme-header {
-    background-color: #212529;
-    width: 100%;
-    height: 60px;
-}
-
-.admin-theme-header .name-brand>h2 {
-    color: white;
-    line-height: 60px;
-    padding-left: 30px;
-    text-transform: uppercase;
-    float: left;
-}
-
-.admin-theme-header .user-setting {
-    color: white;
-    line-height: 60px;
-    font-size: 35px;
-    float: right;
-    padding-right: 30px;
-}
-
-.admin-theme-header .user-setting:hover {
-    color: red;
-}
-
-/* ---HEADING */
-
 /* CONTENT */
-
-#admin-theme .admin-theme-content {
-    background-color: white;
-    margin-top: 3px;
-    width: 100%;
-    height: 870px;
-
-}
-
-/* Sidebar */
-
-#admin-theme .admin-theme-content .sidebar {
-    height: 100%;
-    width: 20%;
-    background-color: #212529;
-    float: left;
-}
-
-.admin-theme-content .sidebar>h2 {
-    color: white;
-    font-size: 15px;
-    padding: 10px 0 0 0;
-    text-transform: uppercase;
-    text-align: center;
-}
-
-.admin-theme-content .sidebar .menu h4{
-    color:white;
-    text-transform: uppercase;
-    line-height: 36px;
-    padding:15px 0 10px 26px;
-}
-
-.admin-theme-content .sidebar .menu a{
-    color:white;
-    padding-left: 30px;
-    line-height: 36px;
-}
-
-.admin-theme-content .sidebar .menu li:hover{
-background-color:gray;
-cursor: pointer;
-}
-
-/* ---Sidebar */
-
-/* Main */
-
-#admin-theme .admin-theme-content .main-content {
-    /* background-color:red; */
-    height: 100%;
-    width: 80%;
-    float: right;
-}
-
-.main-content {
+#content-homestay {
+    position: relative;
+    margin: 20px 7%;
     /* background-color: red; */
-    position: relative;
-    width: 100%;
-    height: 100%;
-}
-
-.main-content .main-show {
-    position: absolute;
-    left: 0.5%;
-    width: 99.5%;
-    height: 100%;
-    background-color: #d6d9db;
-    /* border-radius: 10px 0 0 0; */
-}
-
-/* DataShow */
-#table-manager {
-    /* padding: 0;
-    margin: 0;
-    box-sizing: border-box; */
-    position: absolute;
-    width: 96%;
-    background-color: white;
-    border: 1px solid gray;
-    border-radius: 5px;
     height: 700px;
-    top: 30px;
-    left: 2%;
 }
 
-#table-manager img {
-    width: 100px;
-    height: 100px;
+#content-homestay .button-choice {
+    /* background-color: blue; */
+    line-height: 40px;
+    margin-bottom: 10px;
 }
 
-#table-manager .table-header {
-    background-color: rgba(128, 128, 128, 0.514);
-    width: 100%;
-    display: inline-block;
+#content-homestay .button-choice button {
+    height: 35px;
+    padding: 0 10px 0;
+    border-radius: 5px;
+    background-color:white;
+    text-transform: uppercase;
+    font-size:20px;
+    font-family: 'Roboto Slab', sans-serif;
 }
 
-#table-manager>.table-header>p {
-    position: relative;
-    left: 2%;
+#content-homestay .button-choice button:hover{
+    background-color: rgb(36, 190, 131);
+    color: white;
 }
 
-.line-big {
-    height: 10px;
-}
-
-.table-content-show>table {
-    width: 96%;
-    box-sizing: border-box;
-    text-align: left;
-    background-color: gray;
-    position: relative;
-    top: 10px;
-    left: 2%;
-}
-
-.table-content-show table th,
-.table-content-show table td {
-    padding-top: 3px;
-    line-height: 26px;
-    background-color: white;
-    display: table-cell;
-    text-align: center;
-}
-
-.table-content-show table th {
-    background-color: antiquewhite;
+#content-homestay .description{
+    /* background-color:yellow; */
+    padding: 10px 0;
     font-size: 17px;
 }
 
-.table-content-show table td button {
-    width: 100px;
-    height: 100px;
-    cursor: pointer;
-    font-size:20px;
+#content-homestay .show-homestay{
+    /* background-color:blue; */
 }
 
-.table-content-show table td button:hover {
-    background-color: #212529;
+/* Address-top-area */
+#content>.content-address-top {
+    position: absolute;
+    top: 340px;
+    width: 100%;
+}
+
+.address-top-area {
+    position: absolute;
+    /* background-color: red; */
+    width: 100%;
+    height: 300px;
+}
+
+.address-top-area .address-area-0ahl{
+    position: relative;
+    width: 15.97%;
+    height: 230px;
+    border-radius: 10px;
+    background-size: cover;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    display: inline-block;
+}
+
+.address-top-area .address-area-0ahl{
+    margin-left: 0.5%;
+}
+
+.address-top-area .address-area-0ahl {
+    background-image: url(https://cdn.luxstay.com/home/location/location_1_1559734709.png);
+
+}
+
+.address-top-area .address-area-02 {
+    background-image: url(https://cdn.luxstay.com/home/location/location_5_1559735011.png);
+}
+
+.address-top-area .address-area-03 {
+    background-image: url(https://cdn.luxstay.com/home/location/location_10_1559303118.png);
+}
+
+.address-top-area .address-area-04 {
+    background-image: url(https://cdn.luxstay.com/home/location/location_4_1559786177.png);
+}
+
+.address-top-area .address-area-05 {
+    background-image: url(https://cdn.luxstay.com/home/location/location_16_1559303173.png);
+}
+
+.address-top-area .content-under-image {
+    position: absolute;
     color: white;
+    top: 80%;
+    left: 0.5%;
+    padding: 5px;
+    width: 15.97%;
+    background-color: rgba(107, 102, 102, 0.671);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
+.content-under-image>h2 {
+    font-size: 27px;
+}
 
+.content-under-image>p {
+    font-size: 17px;
+    line-height: 30px;
+}
 
-/* ---DataShow */
-
-/* ---Main */
-
+/* ---Address-top-area */
 /* ---CONTENT */
-
-
-
