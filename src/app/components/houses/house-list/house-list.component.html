@@ -22,32 +22,31 @@
             <div class="line-big"></div>
             <div class="address-top-area">
 
-                <div class="show-product">
+                <div class="show-product" *ngFor="let house of houses; index as i">
                     <div class="address-area-01a">
-                        <img src="https://cdn.luxstay.com/home/location/location_1_1559734709.png" alt="">
+                        <img {{house.image ?? src="{{house.image ?? 'https://vietphiladelphia.com/wp-content/themes/simple-glassy/images/default-image.png'}} ">
                     </div>
                     <div class="content-under-image">
-                        <h5>Căn hộ dịch vụ - 1 phòng ngủ</h5>
+                        <h5>{{house.name}}</h5>
                         <div class="line-big"></div>
-                        <p>2000 Chỗ ở</p>
-                        <p><strong>690,000₫/đêm</strong></p>
+                        <p>{{house.address}}</p>
+                        <p><strong>{{house.price}}</strong></p>
                     </div>
                 </div>
 
-                <div class="show-product">
-                    <div class="address-area-01a">
-                        <img src="https://cdn.luxstay.com/home/location/location_1_1559734709.png" alt="">
-                    </div>
-                    <div class="content-under-image">
-                        <h5>Căn hộ dịch vụ - 1 phòng ngủ</h5>
-                        <div class="line-big"></div>
-                        <p>2000 Chỗ ở</p>
-                        <p><strong>690,000₫/đêm</strong></p>
-                    </div>
-                </div>
                 
             </div>
         </div>
 
     </div>
     <!-- ---CONTENT -->
+
+    <!-- <div class="address-top-area" *ngFor="let house of houses; index as i">
+        .show-poe
+        <div class="address-area-0ahl">
+            <img width="100%" height="100%" src="{{house.image ?? 'https://vietphiladelphia.com/wp-content/themes/simple-glassy/images/default-image.png'}} ">
+        </div>
+        <div class="content-under-image">
+            <p>{{house.name}}</p>
+            <p>{{house.address}}</p>
+            <p>{{house.price}}</p> -->
