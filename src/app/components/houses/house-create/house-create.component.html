@@ -1,4 +1,4 @@
-<form [formGroup]="createForm" (ngSubmit)="create()">
+<!-- <form [formGroup]="createForm" (ngSubmit)="create()">
     <table>
         <tr>
             <td><input type="text" formControlName="name" placeholder="name"></td>
@@ -17,4 +17,85 @@
       <button>Gửi</button>
 
     </table>
-</form>
+</form> -->
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
+
+
+<div id="product-cu">
+    <form id="form1" action="">
+        <div class="header-title">
+            <h1 class="title">Đăng sản phẩm tại đây</h1>
+        </div>
+        <div id="form-product-cu">
+
+            <div class="product-left">
+                <table>
+                    <tr>
+                        <h3 class="title"><strong>Tên sản phẩm</strong></h3>
+                        <input type="text">
+                    </tr>
+                    <tr>
+                        <h3 class="title"><strong>Giá bán</strong></h3>
+                        <input type="text">
+                    </tr>
+                    <tr>
+                        <h3 class="title"><strong>Địa chỉ</strong></h3>
+                        <input type="text">
+                    </tr>
+                    <tr>
+                        <h3 class="title"><strong>Loại nhà</strong></h3>
+                        <p><select class="select-option" name="" id="">
+                                <option value="">Homestay</option>
+                                <option value="">Biệt thự</option>
+                            </select></p>
+                    </tr>
+                    <tr>
+                        <h3 class="title"><strong>Mô tả thêm</strong></h3>
+                        <textarea name="" id="" cols="75" rows="10"></textarea>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="product-right">
+                <table>
+                    <tr>
+                        <h3 class="title"><strong>Số phòng ngủ</strong></h3>
+                        <input type="text">
+                    </tr>
+                    <tr>
+                        <h3 class="title"><strong>Số phòng tắm</strong></h3>
+                        <input type="text">
+                    </tr>
+                    <tr>
+                        <h3 class="title"><strong>Quận</strong></h3>
+                        <p><select class="select-option" name="" id="">
+                                <option value="">Hồ Tây</option>
+                                <option value="">Đống Đa</option>
+                            </select></p>
+                    </tr>
+                    <tr>
+                        <h3 class="title"><strong>Trạng thái</strong></h3>
+                        <p><select class="select-option" name="" id="">
+                                <option value="1">Sẵn sàng cho thuê</option>
+                                <option value="2">Đã có người thuê</option>
+                            </select></p>
+                    </tr>
+                    <tr>
+                        <h3 class="title"><strong>Người dùng</strong></h3>
+                        <p><select class="select-option" name="" id="">
+                                <option value="">Hồ Tây</option>
+                            </select></p>
+                    </tr>
+                    <tr>
+                        <h3 class="title"><strong>Thêm ảnh sản phẩm</strong></h3>
+                        <!-- <input type="file" id="file" (change)="handleFileInput($event.target.files)"> -->
+                    </tr>
+                    <tr>
+                        <p><button>Thêm sản phẩm mới</button></p>
+                    </tr>
+                </table>
+            </div>
+
+        </div>
+    </form>
+</div>
