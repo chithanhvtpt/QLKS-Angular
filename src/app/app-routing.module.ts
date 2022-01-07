@@ -5,6 +5,7 @@ import { RegisterComponent } from "./components/pages/register/register.componen
 import { MasterComponent } from "./components/layouts/master/master.component";
 import { HouseListComponent } from './components/houses/house-list/house-list.component';
 import {HomeComponent} from "./components/layouts/home/home.component";
+import {HouseUserComponent} from "./components/houses/house-user/house-user.component";
 
 const routes: Routes = [
   {
@@ -14,7 +15,7 @@ const routes: Routes = [
         path: "home",component: HomeComponent
       },
       {
-        path: "house",
+        path: "houses",
         loadChildren: () => import("./components/houses/house.module").then(module => module.HouseModule)
       }
     ]
@@ -26,6 +27,7 @@ const routes: Routes = [
   {
     path: "register", component: RegisterComponent
   },
+
 ];
 
 @NgModule({

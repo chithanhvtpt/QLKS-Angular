@@ -34,7 +34,7 @@ export class HouseCreateComponent implements OnInit {
     const data = this.createForm.value;
     this.houseService.createHouse(data).subscribe(res => {
       this.houses.push(res);
-     this.router.navigate(["house/list"])
+     this.router.navigate(["host"])
     })
   }
 

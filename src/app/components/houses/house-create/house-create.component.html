@@ -1,20 +1,53 @@
-<form [formGroup]="createForm" (ngSubmit)="create()">
-    <table>
-        <tr>
-            <td><input type="text" formControlName="name" placeholder="name"></td>
-            <td><input type="text" formControlName="image" placeholder="image"></td>
-            <td><input type="text" formControlName="address" placeholder="address"></td>
-            <td><input type="number" formControlName="price" placeholder="price"></td>
-            <td><input type="text" formControlName="description" placeholder="description"></td>
-            <td><input type="text" formControlName="status" placeholder="status"></td>
-            <td><input type="number" formControlName="bedroom" placeholder="bedroom"></td>
-            <td><input type="number" formControlName="bathroom" placeholder="bathroom"></td>
-            <td><input type="number" formControlName="category_id" placeholder="category_id"></td>
-            <td><input type="number" formControlName="district_id" placeholder="district_id"></td>
-            <td><input type="number" formControlName="image_id" placeholder="image_id"></td>
-            <td><input type="number" formControlName="user_id" placeholder="user_id"></td>
-        </tr>
-      <button>Gửi</button>
-
-    </table>
-</form>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HoangVQ-ProductForm-createupdate-01</title>
+  <!-- <link rel="stylesheet" href="./assets/css/style.css"> -->
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
+</head>
+<body>
+<div id="product-cu">
+  <form id="form1" action="">
+    <div class="header-title">
+      <h1 class="title">Đăng sản phẩm tại đây</h1>
+    </div>
+    <div id="form-product-cu">
+      <div class="product-left">
+        <table>
+          <tr>
+            <h3 class="title"><strong>Tên sản phẩm</strong></h3>
+            <input type="text" formControlName="name">
+          </tr>
+          <tr>
+            <h3 class="title"><strong>Giá bán</strong></h3>
+            <input type="text" formControlName="price">
+          </tr>
+          <tr>
+            <h3 class="title"><strong>Địa chỉ</strong></h3>
+            <input type="text" formControlName="address" >
+          </tr>
+          <tr>
+            <h3 class="title"><strong>Mô tả thêm</strong></h3>
+            <textarea name="" id="" cols="75" rows="19" formControlName="description"></textarea>
+          </tr>
+        </table>
+      </div>
+      <div class="product-right">
+        <table>
+          <tr>
+            <h3 class="title"><strong>Thêm ảnh sản phẩm</strong></h3>
+            <input type="file" formControlName="image" >
+          </tr>
+          <tr>
+            <p><button>Thêm sản phẩm mới</button></p>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </form>
+</div>
+</body>
+</html>

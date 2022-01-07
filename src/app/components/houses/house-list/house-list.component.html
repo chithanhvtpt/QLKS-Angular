@@ -24,19 +24,20 @@
 
                 <div class="show-product" *ngFor="let house of houses; index as i">
                     <div class="address-area-01a">
-                        <img {{house.image ?? src="{{house.image ?? 'https://vietphiladelphia.com/wp-content/themes/simple-glassy/images/default-image.png'}} ">
+                        <img style="height: 100%; width: 100%" src="{{house.image ?? 'https://vietphiladelphia.com/wp-content/themes/simple-glassy/images/default-image.png'}} ">
                     </div>
                     <div class="content-under-image">
                         <h5>{{house.name}}</h5>
                         <div class="line-big"></div>
                         <p>{{house.address}}</p>
-                        <p><strong>{{house.price}}</strong></p>
+                        <p><strong>{{house.price | currency: "VND"}}</strong></p>
                     </div>
                 </div>
 
-                
+
             </div>
         </div>
 
     </div>
     <!-- ---CONTENT -->
+</div>
